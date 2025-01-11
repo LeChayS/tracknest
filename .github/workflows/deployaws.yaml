@@ -1,0 +1,32 @@
+name: AWS Deploy
+
+on:
+  push:
+    branches:
+      - stag
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up AWS CLI
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-west-2
+
+    - name: Build project
+      run: flutter build apk --release
+
+    - name: Deploy to S3
+      run: aws s3 cp build/app/outputs/flutter-apk/app-release.apk s3://your-staging-bucket/app-release.apk
+
+    - name: Deploy to Elastic Beanstalk
+      run: |
+        aws elasticbeanstalk create-application-version --application-name your-app-name --version-label stag --source-bundle S3Bucket="your-staging-bucket",S3Key="app-release.apk"
+        aws elasticbeanstalk update-environment --application-name your-app-name --environment-name your-staging-environment --version-label stag
