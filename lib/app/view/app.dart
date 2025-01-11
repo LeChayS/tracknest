@@ -11,10 +11,10 @@ class App extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       // theme: ThemeData(
-        // appBarTheme: AppBarTheme(
-        //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // ),
-        // useMaterial3: true,
+      // appBarTheme: AppBarTheme(
+      //   backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+      // ),
+      // useMaterial3: true,
       // ),
       // ignore: prefer_const_constructors
       home: TranscreatePage(),

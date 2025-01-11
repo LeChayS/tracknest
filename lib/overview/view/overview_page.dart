@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class OverviewPage extends StatelessWidget {
-const OverviewPage({ super.key });
+  const OverviewPage({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(

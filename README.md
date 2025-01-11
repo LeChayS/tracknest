@@ -237,6 +237,18 @@ _\*Tracknest works on iOS, Android, Web, and Windows._
 
 But to our fav, we only use **development** env because we don't use the other (staging and production) much, and deleting or config the project again may take us a while
 
+### About build error format
+
+When you create a pull request, there will be an error about build, it was about formatting the file
+
+So to fix it, open terminal and use
+
+```bash
+dart format .
+```
+
+Then you are good to go ✨
+
 ## Merge, Branch and Commit Rules
 
 ### 1. Create branch
@@ -273,7 +285,7 @@ _<type>_ are:
 - revert: revert back to the previous commit
 - update: change feature or logic available
 
-_<issue_number>_ is the number of the issue on Github Issue
+_<issue_number>_ is the number of the issue on github
 
 _<issue_title_in_english>_ is the name of the issue but in English
 

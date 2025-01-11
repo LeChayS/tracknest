@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 
-
 class SplitmoneyPage extends StatelessWidget {
-const SplitmoneyPage({ super.key });
+  const SplitmoneyPage({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(

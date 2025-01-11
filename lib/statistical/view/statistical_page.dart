@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class StatisticalPage extends StatelessWidget {
-const StatisticalPage({ super.key });
+  const StatisticalPage({super.key});
 
   @override
-  Widget build(BuildContext context){
+  Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
