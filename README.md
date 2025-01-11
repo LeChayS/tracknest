@@ -5,15 +5,15 @@ A Flutter project created by [Very Good Cli](https://cli.vgv.dev/) 🤖
 
 Track Nest is a finance tracker application that will help you manage your balance. It was designed with local access only so you don't have to worry about your information leaking out 😊
 
-<!-- ## Table of Content
+## Table of Content
 
-- [Feature]()
-- [Getting Started]()
-- [Run Project]()
-- [Running Tests]()
-- [Translations]()
-- [Note]()
-- [Merge, Branch and Commit Rules]() -->
+- [Feature](https://github.com/LeChayS/tracknest?tab=readme-ov-file#features)
+- [Getting Started](https://github.com/LeChayS/tracknest?tab=readme-ov-file#getting-started)
+- [Run Project](https://github.com/LeChayS/tracknest?tab=readme-ov-file#run-project)
+- [Running Tests](https://github.com/LeChayS/tracknest?tab=readme-ov-file#running-tests)
+- [Translations](https://github.com/LeChayS/tracknest?tab=readme-ov-file#translations)
+- [Note](https://github.com/LeChayS/tracknest?tab=readme-ov-file#note)
+- [Merge, Branch and Commit Rules](https://github.com/LeChayS/tracknest?tab=readme-ov-file#merge-branch-and-commit-rules)
 
 ## Features
 
@@ -60,7 +60,7 @@ After installing all the following above it's time for the next step
 1. Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone hhttps://github.com/LeChayS/tracknest.git
 ```
 
 2. Go to the project directory
@@ -272,7 +272,7 @@ New branch always created from _**main**_ (or _**develop**_)
 Following this rule
 
 ```bash
-<type>/#<issue_number>-<issue_title_in_english>
+<type>/<issue_number>-<issue_title_in_english>
 ```
 
 In which
@@ -285,7 +285,7 @@ _<type>_ are:
 - revert: revert back to the previous commit
 - update: change feature or logic available
 
-_<issue_number>_ is the number of the issue on github
+_<issue_number>_ is the number of the issue on github, remember there is an # before the number
 
 _<issue_title_in_english>_ is the name of the issue but in English
 
