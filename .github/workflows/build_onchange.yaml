@@ -1,4 +1,4 @@
-name: Build on change
+name: Build On-change
 on:
   push:
     branches:
